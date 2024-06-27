@@ -42,6 +42,26 @@ def handling_function(tools):
         "tool_call_id": tool.id,
         "output": functions.pause()
         })
+    elif tool.function.name == "next":
+        tool_outputs.append({
+        "tool_call_id": tool.id,
+        "output": functions.next()
+        })
+    elif tool.function.name == "previous":
+        tool_outputs.append({
+        "tool_call_id": tool.id,
+        "output": functions.previous()
+        })
+    elif tool.function.name == "volume_up":
+        tool_outputs.append({
+        "tool_call_id": tool.id,
+        "output": functions.volume_up()
+        })
+    elif tool.function.name == "volume_down":
+        tool_outputs.append({
+        "tool_call_id": tool.id,
+        "output": functions.volume_down()
+        })
 
     return(tool_outputs)
         
