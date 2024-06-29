@@ -1,7 +1,3 @@
 credentials.py
 test.py
-openai/Include
-openai/Lib
-openai/Scripts
 output.mp3
-/openai/__pycache__
